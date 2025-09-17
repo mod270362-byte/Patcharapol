@@ -16,7 +16,6 @@ body {
   position:relative;
 }
 
-/* พื้นหลัง */
 .bg {
   position:fixed;
   width:100%;
@@ -25,7 +24,6 @@ body {
   z-index:-2;
 }
 
-/* ดวงจันทร์ */
 .moon {
   position:absolute;
   top:50px;
@@ -42,7 +40,6 @@ body {
   100%{box-shadow:0 0 35px 20px rgba(255,255,255,0.5);}
 }
 
-/* ดาวเล็กขยับ */
 .star {
   position:absolute;
   border-radius:50%;
@@ -71,7 +68,6 @@ body {
   100%{transform:translate(-800px,800px) rotate(45deg);opacity:0;}
 }
 
-/* หัวข้อ */
 h1{
   font-family:'Poppins', sans-serif;
   font-size:42px;
@@ -90,14 +86,12 @@ h3{
   margin-bottom:10px;
 }
 
-/* ข้อความทั่วไป */
 p, li {
   font-family:'Sarabun', sans-serif;
   font-size:16px;
   line-height:1.5;
 }
 
-/* ปุ่ม */
 .menu, .content{margin-top:40px;}
 .btn {
   font-family:'Sarabun', sans-serif;
@@ -117,7 +111,6 @@ p, li {
   box-shadow: 0 0 20px #00d4ff;
 }
 
-/* กล่องข้อมูล */
 .box {
   background: rgba(10,10,20,0.85);
   border:1px solid #00d4ff;
@@ -128,13 +121,11 @@ p, li {
   box-shadow:0 0 15px #00d4ff;
 }
 
-/* ตาราง */
 table {width:90%;margin:auto;border-collapse:collapse;color:#fff;font-size:16px;}
 th,td{border:1px solid rgba(255,255,255,0.2);padding:8px;}
 th{background: rgba(0,212,255,0.2); text-align:right;}
 td{text-align:left;}
 
-/* fade in/out */
 .section {
   display:none;
   opacity:0;
@@ -147,7 +138,6 @@ td{text-align:left;}
   transform: translateY(0);
 }
 
-/* nav buttons */
 .nav-btns {
   display:flex;
   justify-content:space-between;
@@ -166,7 +156,6 @@ td{text-align:left;}
 <h1>🌌 Portfolio</h1>
 <h2>นายพัชรพล ฤทธิ์มนตรี</h2>
 
-<!-- รูปเฉพาะหน้าหลัก -->
 <div id="main-profile" class="box">
   <img src="476230793_1775359419982724_2690005839190291102_n.jpg" width="150" height="150" style="border-radius:50%; border:2px solid #00d4ff;">
 </div>
@@ -175,7 +164,6 @@ td{text-align:left;}
 <p><i>✨ ยินดีต้อนรับสู่ Portfolio ของผม ✨</i></p>
 <hr>
 
-<!-- เมนูหลัก -->
 <div class="menu" id="menu">
   <button class="btn" onclick="showSection('personal')">📌 ประวัติส่วนตัว</button>
   <button class="btn" onclick="showSection('education')">🎓 ประวัติการศึกษา</button>
@@ -183,34 +171,33 @@ td{text-align:left;}
   <button class="btn" onclick="showSection('contact')">📞 ช่องทางติดต่อ</button>
 </div>
 
-<!-- คอนเทนต์ -->
 <div class="content" id="content">
 
-  <!-- ประวัติส่วนตัว -->
   <div id="personal" class="section box">
-    <h3>📌 ประวัติส่วนตัว</h3>
-    <table style="width:80%; margin:auto; border:none; font-size:14px;">
-      <tr><th>ชื่อ-นามสกุล:</th><td>นายพัชรพล ฤทธิ์มนตรี</td></tr>
-      <tr><th>วันเกิด:</th><td>7 มิถุนายน 2550</td></tr>
-      <tr><th>อายุ:</th><td>18 ปี</td></tr>
-      <tr><th>ที่อยู่:</th><td>บ้านเลขที่ 99/58 หมู่ 6 ถนน พหลโยธิน ซอย จิตตสุภา ตำบล เขาสามยอด อำเภอ เมือง จังหวัด ลพบุรี 15000</td></tr>
-      <tr><th>อีเมล:</th><td>mod270362@gmail.com</td></tr>
-      <tr><th>เบอร์โทร:</th><td>092-518-8425</td></tr>
-      <tr><th>Facebook:</th><td><a href="https://www.facebook.com/patcharapol.rt" target="_blank">patcharapol.rt</a></td></tr>
-      <tr><th>Instagram:</th><td>@Om_xmi.07</td></tr>
-      <tr><th>ความสนใจ:</th><td>🎵 ฟังเพลง, 🖥️ เขียนโปรแกรม, 🎨 ออกแบบ</td></tr>
-      <tr><th>เป้าหมาย:</th><td>เป็นนักพัฒนาซอฟต์แวร์มืออาชีพ</td></tr>
-      <tr><th>ความสามารถพิเศษ:</th><td>วาดภาพ, ตัดต่อวีดีโอ, ใช้ Photoshop/Canva</td></tr>
-      <tr><th>ภาษา:</th><td>ไทย (เจ้าของภาษา), อังกฤษ (ดี)</td></tr>
-    </table>
-    <div class="nav-btns">
-      <button class="btn" onclick="prevSection('personal')">🔙 ย้อนกลับ</button>
-      <div class="nav-center"><button class="btn" onclick="goHome()">🏠 หน้าหลัก</button></div>
-      <button class="btn" onclick="nextSection('personal')">➡️ ถัดไป</button>
-    </div>
+  <h3>📌 ประวัติส่วนตัว</h3>
+  <table style="width:80%; margin:auto; border:none; font-size:14px;">
+    <tr><th>ชื่อ-นามสกุล:</th><td>นายพัชรพล ฤทธิ์มนตรี</td></tr>
+    <tr><th>วันเกิด:</th><td>7 มิถุนายน 2550</td></tr>
+    <tr><th>อายุ:</th><td>18 ปี</td></tr>
+    <tr><th>ที่อยู่:</th><td>บ้านเลขที่ 99/58 หมู่ 6 ถนน พหลโยธิน ซอย จิตตสุภา ตำบล เขาสามยอด อำเภอ เมือง จังหวัด ลพบุรี 15000</td></tr>
+    <tr><th>อีเมล:</th><td>mod270362@gmail.com</td></tr>
+    <tr><th>เบอร์โทร:</th><td>092-518-8425</td></tr>
+    <tr><th>Facebook:</th><td><a href="https://www.facebook.com/patcharapol.rt" target="_blank">patcharapol.rt</a></td></tr>
+    <tr><th>Instagram:</th><td>@Om_xmi.07</td></tr>
+    <tr><th>ความสนใจ:</th><td>🎵 ฟังเพลง, 🖥️ เขียนโปรแกรม, 🎨 ออกแบบ</td></tr>
+    <tr><th>เป้าหมาย:</th><td>เป็นนักพัฒนาซอฟต์แวร์มืออาชีพ</td></tr>
+    <tr><th>ความสามารถพิเศษ:</th><td>วาดภาพ, ตัดต่อวีดีโอ, ใช้ Photoshop/Canva</td></tr>
+    <tr><th>ภาษา:</th><td>ไทย (เจ้าของภาษา), อังกฤษ (ดี)</td></tr>
+  </table>
+  <div class="nav-btns">
+    <button class="btn" onclick="prevSection('personal')">🔙 ย้อนกลับ</button>
+    <div class="nav-center"><button class="btn" onclick="goHome()">🏠 หน้าหลัก</button></div>
+    <button class="btn" onclick="nextSection('personal')">➡️ ถัดไป</button>
+  </div>
+</div>
+
   </div>
 
-  <!-- ประวัติการศึกษา -->
   <div id="education" class="section box">
     <h3>🎓 ประวัติการศึกษา</h3>
     <table>
@@ -218,13 +205,13 @@ td{text-align:left;}
       <tr><td>ประถมศึกษา</td><td>โรงเรียนเทศบาลเมืองเขาสามยอด ๑</td><td>2559</td></tr>
       <tr><td>มัธยมต้น</td><td>โรงเรียนเทศบาล 4 ระบบสาธิตเทศบาลเมืองลพบุรี</td><td>2563</td></tr>
       <tr><td>มัธยมปลาย</td><td>วิทยาลัยเทคนิคลพบุรี</td><td>2567</td></tr>
-      <tr><td>ปริญญาตรี</td><td>มหาวิทยาลัย ...</td><td>กำลังศึกษา</td></tr>
+      <tr><td>ปริญญาตรี</td><td>มหาวิทยาลัยของเกย์</td><td>กำลังศึกษา</td></tr>
     </table>
     <div class="nav-btns">
-      <button class="btn" onclick="prevSection('education')">🔙 ย้อนกลับ</button>
-      <div class="nav-center"><button class="btn" onclick="goHome()">🏠 หน้าหลัก</button></div>
-      <button class="btn" onclick="nextSection('education')">➡️ ถัดไป</button>
-    </div>
+  <button class="btn" onclick="prevSection('education')">🔙 ย้อนกลับ</button>
+  <div class="nav-center"><button class="btn" onclick="goHome()">🏠 หน้าหลัก</button></div>
+  <button class="btn" onclick="nextSection('education')">➡️ ถัดไป</button>
+</div>
   </div>
 
   <!-- ทักษะ -->
@@ -241,24 +228,23 @@ td{text-align:left;}
       <li>🔧 การแก้ปัญหาและ Debug</li>
     </ul>
     <div class="nav-btns">
-      <button class="btn" onclick="prevSection('skills')">🔙 ย้อนกลับ</button>
+      <button class="btn" onclick="prevSection('education')">🔙 ย้อนกลับ</button>
       <div class="nav-center"><button class="btn" onclick="goHome()">🏠 หน้าหลัก</button></div>
-      <button class="btn" onclick="nextSection('skills')">➡️ ถัดไป</button>
+     <button class="btn" onclick="nextSection('skills')">➡️ ถัดไป</button>
     </div>
   </div>
 
-  <!-- ช่องทางติดต่อ -->
   <div id="contact" class="section box">
     <h3>📞 ช่องทางติดต่อ</h3>
     <table style="width:80%; margin:auto; border:none; text-align:left;">
       <tr><th>📞 โทร</th><td>092-518-8425</td></tr>
       <tr><th>🌐 Facebook</th><td><a href="https://www.facebook.com/patcharapol.rt" target="_blank">patcharapol.rt</a></td></tr>
-      <tr><th>📸 Instagram</th><td><a href="https://www.instagram.com/Om_xmi.07" target="_blank">@Om_xmi.07</a></td></tr>
+       <tr><th>📸 Instagram</th><td><a href="https://www.instagram.com/Om_xmi.07" target="_blank">@Om_xmi.07</a></td></tr>
       <tr><th>✉️ Email</th><td><a href="mailto:mod270362@gmail.com">mod270362@gmail.com</a></td></tr>
-      <tr><th>💬 Line</th><td>@patcharapol054</td></tr>
+      <tr><th>💬 Line</th><td>@พัชรพล 054</td></tr>
       <tr><th>🐦 Twitter</th><td>@Semagute</td></tr>
       <tr><th>💼 LinkedIn</th><td><a href="https://www.linkedin.com/in/patcharapol" target="_blank">Patcharapol RT</a></td></tr>
-      <tr><th>🎵 TikTok</th><td><a href="https://www.tiktok.com/@oouuku" target="_blank">@oouuku</a></td></tr>
+     <tr><th>🎵 TikTok</th><td><a href="https://www.tiktok.com/@oouuku" target="_blank">@oouukul</a></td></tr>
     </table>
     <div class="nav-btns">
       <button class="btn" onclick="prevSection('contact')">🔙 ย้อนกลับ</button>
@@ -286,7 +272,6 @@ function showSection(id){
   document.getElementById(id).classList.add('show');
 }
 
-// ไป section ถัดไป
 function nextSection(currentId){
   let index = sectionsOrder.indexOf(currentId);
   if(index < sectionsOrder.length-1){
@@ -294,7 +279,6 @@ function nextSection(currentId){
   }
 }
 
-// กลับ section ก่อนหน้า
 function prevSection(currentId){
   let index = sectionsOrder.indexOf(currentId);
   if(index > 0){
@@ -302,7 +286,6 @@ function prevSection(currentId){
   }
 }
 
-// กลับหน้าหลัก
 function goHome(){
   document.getElementById('menu').style.display='block';
   document.getElementById('content').style.display='none';
@@ -313,7 +296,6 @@ function goHome(){
   }
 }
 
-// ดาวเล็กๆ
 for(let i=0;i<200;i++){
   const star=document.createElement('div');
   star.className='star';
@@ -324,7 +306,6 @@ for(let i=0;i<200;i++){
   document.body.appendChild(star);
 }
 
-// ดาวตก
 function shootingStar(){
   const star=document.createElement('div');
   star.className='shooting-star';
